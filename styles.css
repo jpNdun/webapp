@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media(max-width: 700px) {
+    .header{
+        padding: 0;
+    }
+    .nav{
+        display: none;
+        padding-right: 100px;
+    }
+
+.box-2{
+    margin-bottom: 100%;
+}
+
+}
+
+.header {
+min-height: 80vh;
+background-image: url(/static/pic23.jpeg);
+width: 100%;
+background-position: 50% 00px;
+zoom: 1;
+/*background-color: darkblue;*/
+background-repeat: no-repeat;
+background-size: cover;
+/*padding: 20em;*/
+position: relative;
+/*opacity: 0.45;*/
+isolation: isolate;
+}
+.header::after{
+content: '';
+position: absolute;
+background: darkblue;
+z-index: -1;
+inset: 0;
+opacity: .7;
+}
+
+    
+.text-box{
+    width: 90%;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.button{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.button:hover{
+    border: 1px solid red;
+    background: red;
+    transition: 1s;
+}
+
+/*--- Values ---- */
+
+.values{
+    min-height: 38vh;
+    width: 50%;
+    margin: auto;
+    padding-top: 140px;
+    
+}
+
+.val-col h1{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+.val-col p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    
+    justify-content: space-between;
+    width: 100%;
+}
+.val-col{
+    flex-basis: 22%;
+    background: whitesmoke;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    text-align: center;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.val-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/*---- History ----*/
+
+.history{
+    min-height: 77vh;
+    width: 100%;
+    display: flex;
+    column-gap: 20px;
+    padding: 50px 300px 50px ;
+}
+.box-1{
+    height: 700px;
+    width: 700px;
+}
+.box-2{
+    height: 200px;
+    width: 500px;
+    padding-top: 80px;
+    margin: 0.5rem 0;
+    font-size: 20px;
+    font-family: roboto;
+}
+
+/*------ program ------ */
+
+
+.program{
+    width:100%;
+    text-align: center;
+    margin: auto;
+    padding-top: 5px;
+    background-color: whitesmoke;
+}
+.program h1{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+.program p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    
+    justify-content: space-between;
+    width: 100%;
+}
+.program-col{
+    flex-basis: 22%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    text-align: center;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.program-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/*------ Temple ------*/
+
+.temple{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.temple-col{
+    flex-basis: 32%;
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.temple-col img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+ /*------ Verse ------*/
+
+ .bible{ 
+    min-height: 38vh;
+    background-image: url(/static/bible.jpg), linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));     
+    background-size: cover;
+    position:relative;
+    width: 100%;
+    isolation: isolate;
+    background-position: center;
+   }
+   .bible::after{
+    content: '';
+    position: absolute;
+    background: darkslateblue;
+    z-index: -1;
+    inset: 0;
+    opacity: .4;
+}
+   .verse p{
+    text-align: center;
+    padding-top: 110px;
+    color: white;
+    font-family: roboto;
+    font-size: 30px;
+   }
+
+
+   /*------ Departments ------ */
+   .department{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 100px ;
+   }
+   .department-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+   }
+   .department-col img{
+    width: 100%;
+    border-radius: 10px;
+   }
+   .department-col p{
+        padding: 0;
+   }
+   .department-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+   }
+
+   .pastor{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    column-gap: 200px;
+    padding: 50px 260px 50px 200px;
+   }
+   
+   .pastor-col img{
+    height: 800px;
+    width: 800px;
+   }
+   .pastor-col h1{
+    font-size: 40px;
+    font-weight: bolder;
+   }
+   .pastor-col h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: darkblue;
+    text-align: left;
+    margin-bottom: 30px;
+    margin-top: -10px;
+   }
+   .pastor-col p{
+    font-size: 20px;
+    font-family: roboto;
+   }
+  
+   .footer{
+    min-height: 35vh;
+    width: 100%;
+    background-color: darkslategrey;
+    background-size: cover;
+    position: relative;
+   }
+
+   #container{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 150px;
+   }
+   
+   .adress h3{
+    margin-bottom: 3%;
+    font-size: 30px;
+    font-weight: bolder;
+   }
+.fa-location-dot{
+font-size: 20px;
+color: white; 
+margin-right: 1%;       
+}
+.fa-envelope{
+font-size: 20px;
+color: white; 
+margin-right: 1%;       
+}
+.fa-phone{
+font-size: 20px;
+color: white; 
+margin-right: 1%;       
+}
+
+.fa-youtube{
+font-size: 20px;
+margin-left: 1.5%;
+
+}
+.fa-youtube:hover{
+color: red;
+}
+.fa-facebook{
+font-size: 25px;
+}
+.fa-facebook:hover{
+color:red;
+}
+.fa-tiktok{
+font-size: 20px;
+margin-left: 1.5%;
+
+}
+.fa-tiktok:hover{
+color: red;
+}
+.column{
+margin-left: -5%;
+margin-top: 1%;
+
+}
+nav{
+height: 80px;
+}
+

@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    min-height: 100vh;
+    background-image: url(/static/IMGL0661.jpg);
+    width: 100%;
+    background-position: 50%;
+    zoom: 1;
+    /*background-color: darkblue;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*padding: 20em;*/
+    position: relative;
+    /*opacity: 0.45;*/
+    isolation: isolate;
+    }
+    .header::after{
+        content: '';
+        position: absolute;
+        background: darkblue;
+        z-index: -1;
+        inset: 0;
+        opacity: .7;
+    }
+
+    
+    .text-box{
+        width: 90%;
+        color: black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+    .text-box h1{
+        font-size: 62px;
+    }
+    .text-box p{
+        margin: 10px 0 40px;
+        font-size: 14px;
+        color: #fff;
+    }
+    .button{
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        border: 1px solid #fff;
+        padding: 12px 34px;
+        font-size: 13px;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+    }
+    .button:hover{
+        border: 1px solid red;
+        background: red;
+        transition: 1s;
+    }
+   
+/*------ program ------ */
+
+    .program{
+        width:100%;
+        text-align: center;
+        margin: auto;
+        padding-top: 100px;
+        background-color: whitesmoke;
+        
+    }
+    .program h1{
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 5%;
+    }
+    .program p{
+        color: #777;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        padding: 10px;
+    }
+   .row{
+        
+        justify-content: space-between;
+        width: 100%;
+    }
+    .program-col{
+        flex-basis: 22%;
+        background: #fff3f3;
+        border-radius: 10px;
+        margin-bottom: 5%;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        transition: 0.5s;
+        text-align: center;
+    }
+    h3{
+        text-align: center;
+        font-weight: 600;
+        margin: 10px 0;
+    }
+    .program-col:hover{
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    }
+    @media(max-width: 700px){
+        .row{
+            flex-direction: column;
+        }
+    }
+
+    /*------ Temple ------*/
+
+    .temple{
+        width:100%;
+        text-align: center;
+        margin: auto;
+        padding-top: 100px;
+    }
+    .temple-col{
+        flex-basis: 32%;
+        margin-bottom: 5%;
+        padding: 20px 12px;
+        transition: 0.5s;
+        text-align: center;
+    }
+   .temple-col img{
+        width: 100%;
+        display: block;
+        border-radius: 10px;
+    }
+    .temple-col:hover{
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    }
+    @media(max-width: 700px){
+        .row{
+            flex-direction: column;
+        }
+    }
+
+     /*------ Verse ------*/
+
+     .bible{ 
+        min-height: 38vh;
+        background-image: url(/static/bible.jpg), linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));     
+        background-size: cover;
+        position:relative;
+        width: 100%;
+        isolation: isolate;
+        background-position: center;
+       }
+       .bible::after{
+        content: '';
+        position: absolute;
+        background: darkslateblue;
+        z-index: -1;
+        inset: 0;
+        opacity: .4;
+    }
+       .verse p{
+        text-align: center;
+        padding-top: 110px;
+        color: white;
+        font-family: roboto;
+        font-size: 30px;
+       }
+
+
+       /*------ Departments ------ */
+       .department{
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            padding-top: 100px ;
+            background-color: whitesmoke;
+
+       }
+       .department-col:hover{
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+       }
+       .department-col{
+        flex-basis: 32%;
+        border-radius: 10px;
+        margin-bottom: 5%;
+        text-align: left;
+        transition: .5s;
+       }
+       .department-col img{
+        width: 100%;
+        border-radius: 10px;
+        height: 500px;
+       }
+       .department-col p{
+            padding: 0;
+       }
+       .department-col h3{
+        margin-top: 16px;
+        margin-bottom: 15px;
+        text-align: left;
+       }
+
+       .pastor{
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            padding-top: 100px;
+            background-color: wheat;
+       }
+       
+       .pastor-col{
+        flex-basis: 52%;
+        margin-bottom: 5%;
+        text-align: left;
+        
+       }
+       .pastor-col img{
+        width: 100%;
+        border-radius: 10px;
+        margin-left: 15%;
+       }
+
+       .footer{
+        min-height: 35vh;
+        width: 100%;
+        background-color: darkslategrey;
+        background-size: cover;
+        position: relative;
+       }
+
+       #container{
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 150px;
+       }
+       
+       .adress h3{
+        margin-bottom: 3%;
+        font-size: 30px;
+        font-weight: bolder;
+       }
+.fa-location-dot{
+    font-size: 20px;
+    color: white; 
+    margin-right: 1%;       
+}
+.fa-envelope{
+    font-size: 20px;
+    color: white; 
+    margin-right: 1%;       
+}
+.fa-phone{
+    font-size: 20px;
+    color: white; 
+    margin-right: 1%;       
+}
+
+.fa-youtube{
+    font-size: 20px;
+    margin-left: 1.5%;
+    
+}
+.fa-youtube:hover{
+    color: red;
+}
+.fa-facebook{
+    font-size: 25px;
+}
+.fa-facebook:hover{
+    color:blue;
+}
+.fa-tiktok{
+    font-size: 20px;
+    margin-left: 1.5%;
+    
+}
+.fa-tiktok:hover{
+    color: white;
+}
+.column{
+    margin-left: -5%;
+    margin-top: 1%;
+    
+}
+
+nav{
+    height: 80px;
+}
